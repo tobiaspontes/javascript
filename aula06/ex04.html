@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var salario = Number.parseFloat(window.prompt('Qual o seu salário?')) //converte o valor digitado para float
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!<br>`) // exemplo da função length
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`) // exemplo do método toUpperCase
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.<br>`) // exemplo do método toLowerCase
+        document.write(`O seu salário é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) // exemplo do comando para converter um número para o formato de moeda
+    </script>
+</body>
+</html>
