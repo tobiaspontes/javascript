@@ -23,14 +23,13 @@
 
     <input type="button" value="Checar" onclick="analisar()">
 
-    <div id="conclui" style="margin-top: 10px;"></div>
+    <p id="conclui" style="margin-top: 10px;"></p>
 
     <script>
 
         function calcular() {
 
             var vel = Number(document.getElementById('txtvel').value)
-
             var res = document.getElementById('res')
             
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h.</strong></p>`
@@ -43,8 +42,7 @@
 
         function analisar() {
 
-            var pais = String(document.getElementById('txtpais').value)
-
+            var pais = document.getElementById('txtpais').value
             var res = document.getElementById('conclui')
            
             res.innerHTML = `Se você vive em ${pais}, você é `
